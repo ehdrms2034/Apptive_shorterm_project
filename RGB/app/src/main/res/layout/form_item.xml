@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:text="오늘 하루는 계획된 대로 잘 되셨나요?"
+        android:textStyle=""
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/form_item_text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        >
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:max="100"
+            android:progress="50"
+            android:id="@+id/form_seekbar1"
+
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:max="100"
+            android:progress="50"
+            android:id="@+id/form_seekbar2"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:max="100"
+            android:progress="50"
+            android:id="@+id/form_seekbar3"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
