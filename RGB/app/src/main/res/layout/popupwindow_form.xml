@@ -7,16 +7,18 @@
     tools:context=".PopupWindow_form"
     android:weightSum="1"
     android:orientation="vertical"
+    android:background="#8600FE"
     >
 
 <ImageButton
     android:layout_width="60dp"
     android:layout_height="0dp"
     android:layout_weight="0.1"
-    android:src="@drawable/ic_launcher_background"
+    android:src="@drawable/cancel_button"
     android:layout_gravity="right"
     android:layout_margin="10dp"
     android:id="@+id/form_exit_btn"
+    android:background="#8600FE"
     />
 
 <android.support.v4.view.ViewPager

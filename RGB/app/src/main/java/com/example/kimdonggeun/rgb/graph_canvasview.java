@@ -20,19 +20,19 @@ public class graph_canvasview extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         int Width = 400;
-        int HeightTriangle = 400;
+        int HeightTriangle = 200;
         int centerX = this.getWidth()/2;
         int centerY = this.getHeight()/2;
 
         Paint mPaint = new Paint();
-        mPaint.setColor(Color.GREEN);
+        mPaint.setColor(Color.parseColor("#89FF03"));
         mPaint.setStyle(Paint.Style.FILL);
 
         Path path = new Path();
-        path.moveTo(centerX + Width / 2, centerY);
-        path.lineTo(centerX + Width, centerY + HeightTriangle);
-        path.lineTo(centerX, centerY + HeightTriangle);
-        path.lineTo(centerX + Width / 2, centerY);
+        path.moveTo(centerX , centerY-HeightTriangle); //위쪽 모서리
+        path.lineTo(centerX + Width, centerY + HeightTriangle);//오른쪽 모서리
+        path.lineTo(centerX - Width, centerY + HeightTriangle); //왼쪽 모서리
+        path.lineTo(centerX , centerY-HeightTriangle);//MoveTo랑 경로가 같아야됨
 
         path.close();
 
