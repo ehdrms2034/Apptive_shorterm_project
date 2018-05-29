@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8600FE">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageButton
+            android:id="@+id/btn_graph_home"
+            android:layout_gravity="right"
+            android:src="@drawable/cancel_button"
+            android:background="@color/transparent"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_graph_prevWeek"
+                    android:text="&lt;&lt; 지난주"
+                    android:gravity="center_vertical|right"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/text_graph_Week"
+                    android:text="5월"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    />
+                <Button
+                    android:id="@+id/btn_graph_nextWeek"
+                    android:text="다음주 &gt;&gt;"
+                    android:gravity="center_vertical|left"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/graph_calenderView_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_marginBottom="50dp"
+                android:text="성장이 많았던 한 주,\n이제 여유롭게 가볼까요?"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_graph_prevMonth"
+                    android:text="&lt;&lt; 지난달"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical|right"
+                    android:background="@color/transparent"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/text_graph_Month"
+                    android:text="5월"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    />
+                <Button
+                    android:id="@+id/btn_graph_nextMonth"
+                    android:text="다음달 &gt;&gt;"
+                    android:gravity="center_vertical|left"
+                    android:textSize="15dp"
+                    android:background="@color/transparent"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <GridView
+                android:id="@+id/graph_calenderView_month"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:overScrollMode="never"
+                android:numColumns="7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:padding="20dp"
+                android:layout_marginBottom="50dp"
+                android:text="성장이 많았던 한 주,\n이제 여유롭게 가볼까요?"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
