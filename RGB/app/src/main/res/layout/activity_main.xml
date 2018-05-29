@@ -5,24 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FFFFFF">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:padding="20dp"
+        android:background="#FFFFFF">
         <ImageButton
             android:id="@+id/btn_graph"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/data"
             android:layout_gravity="center_vertical|left"
             android:layout_width="45dp"
-            android:layout_height="45dp" />
+            android:layout_height="45dp"
+            android:background="#FFFFFF"
+            />
         <ImageButton
             android:id="@+id/btn_setting"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/setting"
             android:layout_gravity="center_vertical|right"
             android:layout_width="45dp"
-            android:layout_height="45dp" />
+            android:layout_height="45dp"
+            android:background="#FFFFFF"/>
     </FrameLayout>
 
     <android.support.v4.view.ViewPager
