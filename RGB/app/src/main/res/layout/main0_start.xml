@@ -6,16 +6,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="bottom"
-                    android:padding="30dp"
-                    android:text="오늘의 컬러\n진단하기"
-                    android:textColor="#333333"
-                    android:textSize="50dp" />
+        <TextView
+            android:text="오늘의 컬러\n진단하기"
+            android:textSize="50dp"
+            android:textColor="#333333"
+            android:padding="30dp"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
         <LinearLayout
             android:layout_weight="1"
             android:paddingLeft="30dp"
@@ -32,14 +31,14 @@
         </LinearLayout>
     </LinearLayout>
 
-<!--
+    <!--
     <ImageButton
         android:layout_width="70dp"
         android:layout_height="200dp"
         android:src="@drawable/ic_launcher_background"
         android:layout_gravity="right|center"
         android:id="@+id/main0_next_btn"
-        />-->
-
+        />
+        -->
 
 </FrameLayout>

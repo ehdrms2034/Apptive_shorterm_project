@@ -17,11 +17,11 @@ public class PopupWindow_viewpageradapter extends FragmentPagerAdapter {
         public Fragment getItem(int position){
             switch(position){
                 case 0:
-                    return new PopupWindow_item("1번질문 배점 1,0,0",1,0,0);
+                    return new PopupWindow_item();
                 case 1:
-                    return new PopupWindow_item("2번질문 배점 0,1,1",0,1,1);
+                    return new PopupWindow_item();
                 case 2:
-                    return new PopupWindow_item("3번질문 배점 2,0,1",2,0,1);
+                    return new PopupWindow_item();
                 default:
                     return null;
             }
