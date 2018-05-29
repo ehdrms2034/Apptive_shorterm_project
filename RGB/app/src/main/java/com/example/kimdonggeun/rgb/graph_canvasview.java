@@ -19,8 +19,8 @@ public class graph_canvasview extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        int Width = 200;
-        int HeightTriangle = 100;
+        int Width = 400;
+        int HeightTriangle = 200;
         int centerX = this.getWidth()/2;
         int centerY = this.getHeight()/2;
 
