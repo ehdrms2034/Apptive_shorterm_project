@@ -22,6 +22,8 @@ public class PopupWindow_viewpageradapter extends FragmentPagerAdapter {
                     return new PopupWindow_item("2번질문 배점 0,1,1",0,1,1);
                 case 2:
                     return new PopupWindow_item("3번질문 배점 2,0,1",2,0,1);
+                case 3:
+                    return new PopupWindow_item("이번 질문은 이렇게하겠따.",3,3,3);
 
                     default:
                     return null;
@@ -30,7 +32,7 @@ public class PopupWindow_viewpageradapter extends FragmentPagerAdapter {
         }
         @Override
         public int getCount(){
-            return 3;
+            return 4;
         }
 
 

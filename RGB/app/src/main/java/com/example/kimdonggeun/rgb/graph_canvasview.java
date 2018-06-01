@@ -42,10 +42,15 @@ public class graph_canvasview extends View {
 
 
         super.onDraw(canvas);
-        int num_R = 200;
-        int num_G = 100; //왼쪽 모서리
-        int num_B = 300; //오른쪽 모서리
-        int centerX = this.getWidth()/2;
+
+        int num_R,num_B,num_G;
+        num_R=num_B=num_G=0;
+        if(p!=null) {
+            num_R = p.getNum_r() ;
+            num_G = p.getNum_g() ; //왼쪽 모서리
+            num_B = p.getNum_b() ; //오른쪽 모서리
+        }
+            int centerX = this.getWidth()/2;
         int centerY = this.getHeight()/2;
 
         Paint mPaint = new Paint();
