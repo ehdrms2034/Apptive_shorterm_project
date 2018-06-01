@@ -8,13 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by yuri on 2018. 5. 22..
- */
+
 
 public class Main1_Graph extends Fragment implements View.OnClickListener{
+
+
     @Nullable
     @Override
+
+
+
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main1_graph, container, false);
         return view;

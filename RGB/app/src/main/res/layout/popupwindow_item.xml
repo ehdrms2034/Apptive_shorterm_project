@@ -35,20 +35,22 @@
             android:layout_height="0dp"
             android:layout_weight="0.2"
             >
-            <Button
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginRight="70dp"
-                android:text="Yes"
-                android:id="@+id/form_item_truebutton"/>
-
-            <Button
+            <ImageButton
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginLeft="70dp"
-                android:text="No"
+                android:id="@+id/form_item_truebutton"
+                android:src="@drawable/form_yes_btn"
+                android:background="#00000000"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/form_no_btn"
+                android:background="#00000000"
                 android:id="@+id/form_item_falsebutton"/>
 
         </FrameLayout>

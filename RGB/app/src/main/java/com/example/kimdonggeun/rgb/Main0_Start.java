@@ -8,9 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-/**
- * Created by yuri on 2018. 5. 22..
- */
 
 public class Main0_Start extends Fragment implements View.OnClickListener {
     Button btnGo;
