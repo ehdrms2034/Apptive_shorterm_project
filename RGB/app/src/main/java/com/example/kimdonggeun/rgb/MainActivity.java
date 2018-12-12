@@ -22,9 +22,11 @@ import static android.content.ContentValues.TAG;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    ImageButton btnGraph, btnSetting;
+    ImageButton btnGraph, btnGuide, btnNext;
     ViewPager container;
-    View setting_DialogView;
+    Boolean guideOn=true;
+
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +37,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnGraph = findViewById(R.id.btn_graph);
         btnGraph.setOnClickListener(this);
-        btnSetting = findViewById(R.id.btn_setting);
-        btnSetting.setOnClickListener(this);
 
+        if(guideOn){
+            Intent intent = new Intent(this, GuideActivity.class);
+            startActivity(intent);
+            guideOn = !guideOn;
+        }
         container = findViewById(R.id.content_frame);
         Main_PagerAdapter adapter = new Main_PagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Main0_Start());
@@ -53,13 +58,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(this, GraphActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_setting:
-                Dialog();
-                break;
             default:
                 break;
         }
     }
+<<<<<<< HEAD
     public void Dialog() {
         setting_DialogView = (View) View.inflate(MainActivity.this, R.layout.setting_dialog, null);
         android.app.AlertDialog.Builder dlg = new android.app.AlertDialog.Builder(MainActivity.this);
@@ -119,4 +122,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dlg.show();
     }
 
+=======
+>>>>>>> guide page
 }
