@@ -31,14 +31,4 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!--
-    <ImageButton
-        android:layout_width="70dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_gravity="right|center"
-        android:id="@+id/main0_next_btn"
-        />
-        -->
-
 </FrameLayout>
